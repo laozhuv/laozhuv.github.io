@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Galaxy&rainbow</title>
+		<link rel="icon" href="https://pic.imgdb.cn/item/65509ba4c458853aefb3ef26.jpg">
+		<link rel="stylesheet" href="./css/index.css">
+	</head>
+	<body>
+		<!-- 页眉 导航栏 -->
+		<!-- 采用fixed  头像采用嵌套absolute -->
+		<!-- 导航栏float：left -->
+		<header>
+			<div class="top-img">
+				<a href="logo-nav">
+					<img src="https://pic.imgdb.cn/item/65509ba4c458853aefb3ef26.jpg" alt="logo">
+				</a>
+			</div>
+			<div class="nav-container">
+				<ul class="ul-nav">
+					<li class="li-nav">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="li-nav">
+						<a class="nav-link" href="#">My life</a>
+					</li>
+					<li class="li-nav">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<!-- 介绍栏 -->
+		<!-- 采用横向flex布局   flex-direction：row -->
+		<div class="slider-container">
+			<div class="left-slider">
+				<div id="left">
+					<h1>Hello</h1>
+					<h2>I'm Huang XinQiao</h2>
+					<p>
+						This is my blogdemo by myself.
+					</p>
+					<div>
+						<a href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+			<!-- 图片采用背景图片方式 -->
+			<div class="right-slider">
+				<div class="bg-img1"></div>
+			</div>
+		</div>
+		<!-- =主界面 -->
+		<div class="main">
+			<!-- 横向flex布局 -->
+			<div class="introduction flex1">
+				<h3 class="title-style">生活碎片</h3>
+				<p> 美食 萌宠 数码爱好者 <br>每天的落日与晚霞</p>
+			</div>
+			<!-- 生活图片  -->
+			<!-- 采用grid布局  其中第三个子div占两行 -->
+			<div class="photo1">
+				<div class="photo grid">
+					<div class="backround-img">
+						<img src="https://pic.imgdb.cn/item/6550a622c458853aefd5bb0a.jpg" alt="饺子">
+					</div>
+					<div class="backround-img">
+						<img src="https://pic.imgdb.cn/item/6550abb1c458853aefe60a58.jpg" alt="纯生">
+					</div>
+					<div class="backround-img1">
+						<img src="https://pic.imgdb.cn/item/6550a625c458853aefd5c33c.jpg" alt="景色">
+					</div>
+					<div class="backround-img">
+						<img src="https://pic.imgdb.cn/item/6550aefac458853aeff0ac64.jpg" alt="啾啾">
+					</div>
+					<div class="backround-img">
+						<img src="https://pic.imgdb.cn/item/6550abafc458853aefe60610.jpg" alt="喜欢的照片">
+					</div>
+				</div>
+			</div>
+			<!-- （横向）flex布局中嵌套（纵向）flex布局 -->
+			<div class="statistics flex">
+				<div class="counter flex1">
+					<div>
+						<img src="https://pic.imgdb.cn/item/65509c3ac458853aefb5fa7c.png" alt="学校Logo">
+					</div>
+					<h1>广州科技职业技术大学</h1>
+					<p>信息工程学院-21计算机应用工程</p>
+				</div>
+				<div class="counter flex1">
+					<div>
+						<img src="https://pic.imgdb.cn/item/65509c37c458853aefb5f1dc.png" alt="身份Logo">
+					</div>
+					<h1>星河与彩虹</h1>
+					<p>2003年 潮汕人<br>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 页脚 -->
+		<footer class="b4">
+			<!-- 第一行采用 横向的flex布局 -->
+			<div class="header-footer flex">
+				<h1> Contact Me</h1>
+				<div class="link-footer">
+					<a href="https://i0.imgs.ovh/2023/11/12/nFx8N.jpeg"><img
+							src="https://pic.imgdb.cn/item/65509c3cc458853aefb5ffa3.png" alt=""></a>
+					<a href="https://i0.imgs.ovh/2023/11/12/nFs7m.jpeg"><img
+							src="https://pic.imgdb.cn/item/65509c40c458853aefb60b5b.png" alt=""></a>
+					<a href="https://github.com/laozhuv"><img
+							src="https://pic.imgdb.cn/item/65509c3dc458853aefb60444.png" alt=""></a>
+				</div>
+			</div>
+			<!-- 横向flex布局  3个单元格 -->
+			<div class="main-footer flex">
+				<div class="phone container-footer">
+					<div class="email">
+						<h5>E-mail</h5>
+						<h5 id="emailnum">huangxxxq@qq.com</h5>
+					</div>
+				</div>
+				<div class="support-link container-footer">
+					<h2>Support Links</h2>
+					<ul>
+						<li><a href="www.github.com">Github</a></li>
+						<li><a href="#">Contact me</a></li>
+						<li><a href="https://github.com/Thuihui/Thuihui.github.io">Support</a></li>
+					</ul>
+				</div>
+				<div class="address container-footer">
+					<h5>广州科技职业技术大学 <br>
+						信息工程学院, <br> 广东省 广州市.</h5>
+					<h5 class="date">Everyday: <span> 7 AM - 17 PM</span></h5>
+				</div>
+			</div>
+			<!-- 版权 -->
+			<div class="copy-footer">
+				<p>&copy;2023 <a href="https://github.com/laozhuv">Galaxy&rainbow</a>.All rights reserved. 
+				<br>Design by <a href="https://github.com/Thuihui/Thuihui.github.io">TianHuiHui</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
